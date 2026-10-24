@@ -1,8 +1,35 @@
 # Portfolio Shooter
 
-Hero Shooter desarrollado en Unreal Engine 5 íntegramente con Blueprints.
+Hero Shooter desarrollado íntegramente en Blueprints sobre una arquitectura data-driven basada en Data Assets, Gameplay Tags y Object Strategies.
 
 Este proyecto está centrado en la creación de sistemas modulares y escalables para habilidades y armas, priorizando una arquitectura data-driven que permita crear nuevos personajes y armamento sin modificar la lógica existente.
+
+## Principios de Diseño
+
+Cero Ticks / Cero Hard Casts
+
+Todo el sistema se basa en:
+
+Eventos
+Interfaces
+Delegados
+La lógica principal evita el uso de Tick y elimina dependencias rígidas mediante Hard Casts.
+
+Composición sobre Herencia
+La arquitectura utiliza Object Strategies y componentes modulares en lugar de jerarquías de clases complejas.
+
+Nuevos comportamientos pueden crearse mediante composición de estrategias sin modificar sistemas existentes.
+
+Data-Driven First
+Las armas se construyen configurando datos y no escribiendo lógica específica.
+
+Añadir una nueva arma generalmente consiste en:
+
+Crear un Weapon Data Asset.
+Configurar los Fire Modes.
+Seleccionar Trigger, Execution y Reload Strategies.
+Ajustar parámetros de balance.
+Sin necesidad de modificar el sistema de armas.
 
 ## Tecnologías
 
@@ -13,9 +40,44 @@ Este proyecto está centrado en la creación de sistemas modulares y escalables 
 - Object Strategies
 - Arquitectura Data-Driven
 
-## Características principales
+# Características principales
 
-### Sistema de armas Data-Driven
+## Arquitectura
+
+```text
+Character
+│
+├── Equipped Weapon Data Asset
+│
+└── Weapon Manager Component
+     │
+     ▼
+     Weapon Data Asset
+     │
+     ├── Weapon Name
+     ├── Reload Animation
+     │
+     └── TMap<GameplayTag, FireModeConfig>
+           │
+           ├── Primary Fire
+           ├── Secondary Fire
+           └── Special Fire
+                │
+                ▼
+           FireModeConfig
+                │
+                ├── Trigger Class
+                ├── Execution Class
+                ├── Reload Class
+                ├── Range
+                ├── Fire Rate
+                ├── Bullets Per Shot
+                ├── Damage
+                ├── Spread Config
+                └── Reload Config
+```
+
+## Sistema de armas Data-Driven
 
 Todo el comportamiento de las armas está definido mediante datos y estrategias configurables.
 
@@ -112,4 +174,4 @@ _Añadir enlace a vídeo o demo._
 
 ## Autor
 
-Desarrollado por Álvaro.
+Desarrollado por Álvaro de la Fuente.
