@@ -1,8 +1,10 @@
 # Portfolio Shooter
 
-Hero Shooter desarrollado íntegramente en Blueprints sobre una arquitectura data-driven basada en Data Assets, Gameplay Tags y Object Strategies.
+Demo técnica desarrollada íntegramente en Blueprints en Unreal Engine 5.
 
-Este proyecto está centrado en la creación de sistemas modulares y escalables para habilidades y armas, priorizando una arquitectura data-driven que permita crear nuevos personajes y armamento sin modificar la lógica existente.
+El objetivo del proyecto no es crear un juego completo, sino diseñar y validar una arquitectura de gameplay modular y escalable para Hero Shooters.
+
+La demo se centra en la creación de un sistema de armas completamente data-driven basado en Gameplay Tags, Data Assets y Object Strategies, permitiendo construir nuevos personajes, armas y modos de disparo sin modificar los sistemas existentes.
 
 ## Principios de Diseño
 
@@ -164,10 +166,41 @@ Cada modo mantiene su propia lógica, tiempos y recursos, permitiendo comportami
 - Reducir dependencias entre gameplay y contenido.
 - Facilitar la creación de nuevos personajes mediante configuración de datos.
 
-## Capturas
+## Qué demuestra este proyecto
 
-_Añadir imágenes del juego aquí._
+- Diseño de arquitecturas data-driven.
+- Gameplay systems development en Blueprints.
+- Uso avanzado de Gameplay Tags.
+- Patrones de composición mediante Object Strategies.
+- Desarrollo desacoplado mediante interfaces y delegados.
+- Diseño modular orientado a extensibilidad.
+- Principios de mantenimiento y escalabilidad.
+- 
+## Capturas Técnicas
 
+### Weapon Data Asset
+
+[Imagen]
+
+### Weapon Manager Component
+
+[Imagen]
+
+### Fire Mode Configuration
+
+[Imagen]
+
+### Trigger Strategy
+
+[Imagen]
+
+### Execution Strategy
+
+[Imagen]
+
+### Reload Strategy
+
+[Imagen]
 ## Gameplay
 
 _Añadir enlace a vídeo o demo._
