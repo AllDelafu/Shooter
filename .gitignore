@@ -61,6 +61,12 @@ Build/*/**
 # Don't ignore icon files in Build
 !Build/**/*.ico
 
+# IDEs
+.idea/
+.vscode/
+
+*.pdb
+
 # Built data for maps
 *_BuiltData.uasset
 
