@@ -180,31 +180,35 @@ Cada modo mantiene su propia lógica, tiempos y recursos, permitiendo comportami
 
 ### Weapon Data Asset
 
-![Ejemplo Data Asset](Data-Asset-example.png)
+![Ejemplo Data Asset](Data%20Asset%20example.png)
 
 ### Weapon Manager Component
 
-[Imagen]
+![Función para equiptar arma](EquipWeapon%20P1.png)
+
+![Función para equiptar arma](EquipWeapon%20P2.png)
+
+![Función para equiptar arma](EquipWeapon%20P3.png)
+
+![Función para equiptar arma](EquipWeapon%20P4.png)
 
 ### Fire Mode Configuration
 
-[Imagen]
+![Estructura de los modos de disparo](FireModeConfig.png)
 
 ### Trigger Strategy
 
-[Imagen]
+![Disparo automático](Trigger%20Auto.png)
 
 ### Execution Strategy
 
-[Imagen]
+![Hitscan](Execution%20Hitscan%20P1.png)
+
+![Hitscan](Execution%20Hitscan%20P2.png)
 
 ### Reload Strategy
 
-[Imagen]
-
-## Gameplay
-
-_Añadir enlace a vídeo o demo._
+![Recrga por cargador](Reload%20Magazine.png)
 
 ## Autor
 
