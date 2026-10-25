@@ -180,7 +180,7 @@ Cada modo mantiene su propia lógica, tiempos y recursos, permitiendo comportami
 
 ### Weapon Data Asset
 
-[Imagen]
+![Ejemplo Data Asset](Data-Asset-example.png)
 
 ### Weapon Manager Component
 
