@@ -201,6 +201,7 @@ Cada modo mantiene su propia lógica, tiempos y recursos, permitiendo comportami
 ### Reload Strategy
 
 [Imagen]
+
 ## Gameplay
 
 _Añadir enlace a vídeo o demo._
